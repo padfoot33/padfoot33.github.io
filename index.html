@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stardust Pixel</title>
+<meta name="description" content="Stardust Pixel makes cozy mobile games.">
+<!--
+  Studio home for padfoot33.github.io (no custom domain yet). Source lives in the game repo at
+  design/release/site/; copy it to the root of padfoot33/padfoot33.github.io. Colours from the
+  Stardust Pixel brand kit palette.
+-->
+<style>
+  :root { --void: #03020c; --night: #0c0634; --indigo: #140a4a; --star: #f1ecff; --lilac: #b8adff;
+          --neon: #ff48ff; --amber: #ffb428; --cyan: #46e8ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; color: var(--star); font: 17px/1.6 system-ui, sans-serif;
+         background: radial-gradient(1px 1px at 12% 18%, var(--star) 50%, transparent 51%),
+                     radial-gradient(1px 1px at 72% 9%, var(--lilac) 50%, transparent 51%),
+                     radial-gradient(1px 1px at 44% 64%, var(--star) 50%, transparent 51%),
+                     radial-gradient(1px 1px at 88% 46%, var(--cyan) 50%, transparent 51%),
+                     radial-gradient(1px 1px at 22% 84%, var(--lilac) 50%, transparent 51%),
+                     linear-gradient(var(--night), var(--void)) fixed; }
+  main { max-width: 52rem; margin: 0 auto; padding: 48px 16px 64px; }
+  .logo { display: block; width: min(420px, 80vw); height: auto; margin: 0 auto 8px; image-rendering: pixelated; }
+  .tag { text-align: center; color: var(--amber); letter-spacing: .12em; text-transform: uppercase; font-size: .85rem; margin: 0 0 48px; }
+  h2 { font-size: 1.1rem; color: var(--lilac); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 16px; }
+  .game { display: flex; gap: 20px; align-items: center; padding: 20px; border-radius: 20px;
+          background: var(--indigo); border: 1px solid #2a1f6e; color: inherit; text-decoration: none; }
+  .game:hover { border-color: var(--neon); }
+  .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .game h3 { margin: 0 0 4px; font-size: 1.3rem; }
+  .game p { margin: 0; color: var(--lilac); }
+  footer { margin-top: 56px; color: var(--lilac); font-size: .9rem; text-align: center; }
+  a { color: var(--cyan); }
+  @media (max-width: 480px) { .game { flex-direction: column; text-align: center; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="assets/wordmark.png" width="1080" height="384" alt="Stardust Pixel">
+  <p class="tag">Games &amp; late nights</p>
+
+  <h2>Games</h2>
+  <a class="game" href="little-parcel-lane/">
+    <img src="assets/little-parcel-lane-icon.png" alt="">
+    <div>
+      <h3>Little Parcel Lane</h3>
+      <p>A cozy find-three puzzle: spot matching items, pack the parcels, bring every room to life. Android, in closed testing.</p>
+    </div>
+  </a>
+
+  <footer>
+    <p>Contact: <a href="mailto:stardustpixel1211@gmail.com">stardustpixel1211@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
