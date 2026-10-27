@@ -8,8 +8,9 @@
   Source of the game's privacy policy, for GitHub Pages. The game repo is
   private, so this page is published from padfoot33/padfoot33.github.io at
   /little-parcel-lane/privacy/; edit it here and copy it there.
-  Keep it true to the build: if ads, purchases, analytics or online features
-  arrive, this page changes in the same release (and the Data safety form).
+  Version 1.1 (versionCode 3, 28 October 2026): ads, purchases, analytics.
+  Keep it true to the build and to the Play Data safety form
+  (design/release/data-safety-v1.1.csv) in the same release.
 -->
 <style>
   :root { --ink: #4f3116; --soft: #655044; --paper: #fff0d3; --line: #b89062; }
@@ -30,25 +31,66 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Little Parcel Lane · Effective 22 October 2026</p>
+<p class="meta">Little Parcel Lane · Version 1.1 · Effective 28 October 2026</p>
 
-<p>Little Parcel Lane is a cozy puzzle game published by Stardust Pixel. The current version of the game does not collect, store or share any personal information. It has no accounts, no sign-in, no ads, no analytics, no chat and no in-app purchases.</p>
+<p>Little Parcel Lane is a cozy puzzle game published by Stardust Pixel. Version 1.1 can show ads through Google AdMob, sell parcels through Google Play, and send gameplay and crash reports to Firebase, which is also Google. There is no account and no sign-in. We do not sell your data.</p>
 
 <h2>What stays on your phone</h2>
-<p>Your game progress, coins, boosters and settings (music, sound, vibration) are saved only on your device. We have no server and never receive them. Uninstalling the game, or clearing its storage in Android settings, deletes them.</p>
-<p>If Android backup is turned on, Android may include this game data in your own Google account's device backup. That is your backup, under Google's terms; we cannot see it.</p>
+<p>Your progress, coins, boosters, settings (music, sound, vibration) and a Support ID are saved on your device. We have no server that stores that save. Uninstalling the game, or clearing its storage in Android settings, deletes the copy on the phone.</p>
+<p>The game also keeps a local record of purchases it has granted (the product and the order id), so a paid order is added once. That record stays on the device with the rest of the save. We never receive your card number, and the game does not send the full purchase token.</p>
+<p>The Support ID is a random code the game creates on the device. It is not made from your advertising ID or from any Google id. The game never sends it to us, to Firebase or to AdMob. Settings can copy it, with the app version, so you can paste it into an email. While analytics is allowed to run, that copy also includes the Google Analytics app instance ID, for the same email. The copy goes to your clipboard. The game still sends nothing by itself.</p>
+
+<h2>Backup</h2>
+<p>Your save may be in your device's Google backup. If Android backup is turned on, Android may include this game's save in your own Google account's device backup. That copy is yours, under Google's terms. We cannot see it or change it.</p>
+
+<h2>Ads</h2>
+<p>Ads are served by Google AdMob. When an ad request runs, AdMob can collect and share with Google, for advertising, analytics and fraud prevention:</p>
+<ul>
+  <li>the Android advertising ID and other device or app ids</li>
+  <li>an approximate location derived from the IP address (not a precise GPS location; the game does not ask for a location permission)</li>
+  <li>ad interactions, such as an ad being shown or tapped</li>
+  <li>diagnostics about the ad SDK</li>
+</ul>
+<p>You can choose to watch a short rewarded video, for example to refill hearts. The game caps those at five a day. A small banner can sit on the home screen after you clear level 10. It is not on the shop, and it is not over the play area of a level. A full-screen ad between levels is switched off to start. If we turn that on later, it still never plays when you open or leave the game, during a level, or on top of an offer.</p>
+<p>Players in the EEA, the UK and Switzerland see Google's consent form before personalised ads. If you consent, ads can be personalised. If you allow storage but not personalisation, ads are not personalised. If you choose "Do not consent", Google may still show limited ads, and a reward can say that no ad is available right now. We do not add a separate switch that turns every ad off. Rewarded videos play only when you tap them.</p>
+<p>In those same places we do not store analytics or ad identifiers until you have answered the form. Ad personalisation follows that answer. Elsewhere, ads and analytics run without that form.</p>
+<p>Settings shows "Privacy choices" when Google's consent SDK says a choice applies to you (the EEA, the UK, Switzerland, and US states that require a message). It reopens the form. After you change the choice, the game stops asking for ads if Google says it must.</p>
+<p>To reset or delete the advertising ID on the phone: Android Settings, then Privacy (or Google), then Ads, then "Delete advertising ID" or "Reset advertising ID". The menu name depends on the phone and the Android version.</p>
+<p>How Google uses information from sites or apps that use our services: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. AdMob's own notes: <a href="https://support.google.com/admob/answer/6128543">support.google.com/admob/answer/6128543</a>.</p>
+
+<h2>In-app purchases</h2>
+<p>Google Play takes the payment. We do not see your card, bank account or full billing address. The game receives the product id and the order id, and keeps them on the device as described above. The order id can be included in a purchase analytics event. The full purchase token is not.</p>
+<p>All of the parcels are consumable. "Restore purchases" only finishes an order that was paid but not yet added. It cannot give back coins that were already added, and it cannot rebuild a save after you delete it.</p>
+<p>Play keeps its own order records under Google's privacy policy. We cannot delete those.</p>
+
+<h2>Analytics and crash reports</h2>
+<p>Firebase Analytics receives an app instance ID, a Firebase installation ID, and gameplay events (for example screens, levels, and whether a purchase or an ad completed). Firebase Crashlytics receives crash logs and diagnostics, including a Crashlytics installation id. Remote Config fetches the game's configuration. These go to Google so we can run and improve the game.</p>
+<p>Google Analytics keeps gameplay events for 14 months for explorations and funnels. Crash reports are kept for 90 days and then dropped by Firebase.</p>
+<p>Firebase's privacy page: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
 
 <h2>Permissions</h2>
-<p>The game asks for one permission: vibration, for haptic feedback. It does not ask for internet access and does not send any information about you anywhere.</p>
+<p>Version 1.1 uses these permissions, and no location permission:</p>
+<ul>
+  <li>Internet, and a check of whether the network is available, so ads, purchases and analytics can reach Google</li>
+  <li>Google Play billing, so the Shop can sell parcels</li>
+  <li>Advertising ID (<code>AD_ID</code>) and Android's ad services IDs (ad ID, attribution and topics), so Google's ad library can use them</li>
+  <li>Install referrer, a Google Play service that tells Firebase which store page the install came from</li>
+  <li>Wake lock and a foreground service, which Google's libraries use to finish short background work such as sending a crash report</li>
+  <li>Vibration, for haptic feedback</li>
+</ul>
 
 <h2>Children</h2>
-<p>The game has no violent or adult content, but it is not directed at children under 13. We do not knowingly collect personal information from children under 13; the current version collects none from anyone.</p>
+<p>The game has no violent or adult content. It is for players aged 13 and over, and it is not directed at children under 13. We do not market it as a children's app. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the game, email us and we will delete the analytics and crash data we can match.</p>
 
-<h2>Google Play</h2>
-<p>When you download or update the game, Google Play handles that under Google's own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+<h2>Asking us to delete data</h2>
+<p>Email <a href="mailto:stardustpixel1211@gmail.com">stardustpixel1211@gmail.com</a> with the text from Settings, Support ID, Copy. That text is the Support ID, the app version and, when analytics was collecting, the Google Analytics app instance ID.</p>
+<p>We use the app instance ID to delete that Analytics user. The data stops showing in explorations within about 24 hours and is removed within 63 days. Crash reports expire after 90 days on their own. If the email has no app instance ID, there is no Analytics user for us to find. Play's order records stay with Google. The Support ID itself never left the device through the app. Clearing the game's storage, or uninstalling, removes the on-device save. A Google backup can still hold a copy until you delete that backup.</p>
+
+<h2>Questions</h2>
+<p><strong>What happens to my coins if I reinstall?</strong> Progress and coins live on the device. With the device's Google backup on, Android copies the save about once a day, only while the phone is idle, on Wi-Fi, and backup is on, and it can restore that copy when you reinstall. Coins you bought after the last backup are not in it. If backup is off, a reinstall starts empty. Restore purchases cannot bring back coins that were already added, and it cannot re-deliver a purchase that Play has already marked as used.</p>
 
 <h2>Changes and contact</h2>
-<p>We do not sell any data. Later versions are planned to add ads (Google AdMob) and in-app purchases through Google Play. Before any such version is released, this page will describe exactly what those services collect, ask for consent where the law requires it, and carry a new date; the Play Store listing will change at the same time. Questions: <a href="mailto:stardustpixel1211@gmail.com">stardustpixel1211@gmail.com</a>.</p>
+<p>We do not sell any data. When what this page describes changes, we will update the page in the same release as the game and put a new date here. Questions: <a href="mailto:stardustpixel1211@gmail.com">stardustpixel1211@gmail.com</a>.</p>
 
 </main>
 </body>
